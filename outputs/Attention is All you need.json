@@ -1,0 +1,20 @@
+{
+    "method": [
+        "Proposes a new simple network architecture called the Transformer.",
+        "Based solely on attention mechanisms, dispensing with recurrence and convolutions entirely.",
+        "Allows for significantly more parallelization compared to recurrent models.",
+        "Relies entirely on self-attention to compute representations of its input and output.",
+        "Employs an encoder-decoder structure.",
+        "Uses stacked self-attention and point-wise, fully connected layers for both encoder and decoder.",
+        "Encoder is composed of N=6 identical layers.",
+        "Each encoder layer has two sub-layers: a multi-head self-attention mechanism and a position-wise fully connected feed-forward network.",
+        "Uses residual connections around each sub-layer, followed by layer normalization."
+    ],
+    "datasets": [
+        "WMT 2014 English-to-German translation task",
+        "WMT 2014 English-to-French translation task",
+        "English constituency parsing (with large and limited training data)"
+    ],
+    "limitations": [],
+    "future_work": []
+}

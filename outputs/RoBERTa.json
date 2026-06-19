@@ -1,0 +1,23 @@
+{
+    "method": [
+        "Naive Bayes",
+        "KNN",
+        "CART",
+        "LSTM",
+        "RoBERTa"
+    ],
+    "datasets": [
+        "Amazon book reviews dataset"
+    ],
+    "limitations": [
+        "Traditional models demonstrated limitations in capturing nuanced textual relationships.",
+        "LSTM model faced scalability challenges and overfitting issues.",
+        "LSTM and other sequential models have higher computational overhead than transformer-based models.",
+        "Transformer-based models remain susceptible to certain adversarial inputs."
+    ],
+    "future_work": [
+        "Optimize RoBERTa's computational efficiency.",
+        "Expand RoBERTa's applications to multilingual sentiment analysis tasks.",
+        "Expand RoBERTa's applications to cross-domain sentiment analysis tasks."
+    ]
+}

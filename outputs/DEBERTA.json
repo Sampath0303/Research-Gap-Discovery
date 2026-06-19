@@ -1,0 +1,17 @@
+{
+    "method": [
+        "A new model architecture DeBERTa (Decoding-enhanced BERT with disentangled attention) that improves the BERT and RoBERTa models.",
+        "Disentangled attention mechanism: each word is represented using two vectors encoding its content and position, respectively; attention weights are computed using disentangled matrices on contents and relative positions.",
+        "Enhanced mask decoder: incorporates absolute positions in the decoding layer to predict masked tokens during model pre-training, by using absolute word position embeddings right before the softmax layer.",
+        "A new virtual adversarial training method used for fine-tuning to improve models\u2019 generalization."
+    ],
+    "datasets": [
+        "MNLI",
+        "SQuAD v2.0",
+        "RACE",
+        "Wikitext-103",
+        "SuperGLUE benchmark"
+    ],
+    "limitations": [],
+    "future_work": []
+}

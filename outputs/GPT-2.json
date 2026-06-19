@@ -1,0 +1,27 @@
+{
+    "method": [
+        "Unsupervised multitask learning using language models.",
+        "Zero-shot task transfer: Language models perform downstream tasks without any parameter or architecture modification.",
+        "Based on language modeling, framed as unsupervised distribution estimation by factorizing joint probabilities of symbols.",
+        "Utilizes self-attention architectures, specifically a 1.5B parameter Transformer model named GPT-2.",
+        "Conditions on both input and task (p(output|input, task)), where tasks, inputs, and outputs are specified as sequences of symbols."
+    ],
+    "datasets": [
+        "WebText (training dataset): A new dataset of millions of webpages.",
+        "CoQA (evaluation): For question answering.",
+        "WMT-14 Fr-En (evaluation): For machine translation.",
+        "CNN and Daily Mail (evaluation): For summarization.",
+        "Natural Questions (evaluation): For question answering.",
+        "7 out of 8 tested language modeling datasets (evaluation)."
+    ],
+    "limitations": [
+        "The largest model (GPT-2) still underfits the WebText training dataset.",
+        "Current ML systems are often 'narrow experts' rather than 'competent generalists', displaying brittle behavior and sensitivity to changes in data distribution and task specification (addressed by their approach).",
+        "The prevalence of single-task training on single-domain datasets contributes to a lack of generalization observed in current systems (addressed by their approach).",
+        "It is very difficult to scale the creation of datasets and the design of objectives to the degree required for brute-force multitask learning with current techniques."
+    ],
+    "future_work": [
+        "Building language processing systems that learn to perform tasks from their naturally occurring demonstrations.",
+        "Moving towards more general systems that can perform many tasks without the need to manually create and label a training dataset for each one."
+    ]
+}

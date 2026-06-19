@@ -1,0 +1,31 @@
+{
+    "method": [
+        "GPT-3 is the third generation of the Generative Pre-trained Transformer (GPT) model series, developed by OpenAI.",
+        "It is based on an auto-regressive decoder-only transformer architecture, utilizing a self-attention mechanism.",
+        "The model boasts 175 billion parameters.",
+        "Training involved efforts in filtering for a high-quality dataset of approximately 500 billion tokens.",
+        "GPT-3 is applied in diverse domains including conversational AI chatbots, software development, creative work, domain knowledge, business productivity, customer service, and report summarization.",
+        "It is made available to the public through the OpenAI playground and an API.",
+        "The playground offers 'complete', 'insert', and 'edit' modes for interaction.",
+        "Users can choose from different model variants (davinci, curie, babbage, ada) based on capability and cost.",
+        "Model behavior can be controlled via various parameters such as 'temperature' (randomness), 'maximum length', 'stop sequence', 'TOP P', 'Frequency penalty', 'Presence penalty', 'Best of', 'Inject start text', 'Inject restart text', and 'Show probabilities'.",
+        "The API provides a fine-tuning functionality to adapt the model to specific tasks by training on prepared JSONL files (prompt and completion pairs)."
+    ],
+    "datasets": [
+        "BooksCorpus (for GPT-1)",
+        "WebText (millions of webpages, for GPT-2)",
+        "Common Crawl (for GPT-3)",
+        "WebText2 (for GPT-3)",
+        "Books2 (mentioned twice, for GPT-3)",
+        "Wikipedia (for GPT-3)",
+        "Prepared JSONL files (for fine-tuning GPT-3 via API)"
+    ],
+    "limitations": [
+        "Training complexity",
+        "Bias",
+        "Hallucination/incorrect answers"
+    ],
+    "future_work": [
+        "Future research opportunities in this area"
+    ]
+}

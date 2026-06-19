@@ -1,0 +1,18 @@
+{
+    "method": [
+        "Proposes replaced token detection (RTD) as a pre-training task for text encoders.",
+        "Corrupts input by replacing some tokens with plausible alternatives sampled from a small generator network.",
+        "Trains a discriminative model (ELECTRA) to predict whether each token in the corrupted input was replaced by a generator sample or not.",
+        "Learns from all input tokens, making it more computationally efficient compared to Masked Language Modeling (MLM) which only learns from a small subset of masked tokens.",
+        "Utilizes two neural networks: a generator (typically a small masked language model) and a discriminator (ELECTRA).",
+        "The generator is trained with maximum likelihood, not adversarially, due to the difficulty of applying GANs to text.",
+        "After pre-training, the generator is discarded, and only the discriminator (the ELECTRA model) is fine-tuned on downstream tasks.",
+        "Applies this approach to pre-train Transformer text encoders."
+    ],
+    "datasets": [
+        "GLUE natural language understanding benchmark",
+        "SQuAD question answering benchmark"
+    ],
+    "limitations": [],
+    "future_work": []
+}

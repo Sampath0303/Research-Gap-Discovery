@@ -1,0 +1,34 @@
+# Research Gap Discovery Engine - Dashboard Requirements
+# Install with: pip install -r requirements.txt
+
+# Web Framework
+streamlit>=1.28.0
+streamlit-option-menu>=0.3.2
+
+# Visualizations
+plotly>=5.14.0
+pandas>=2.0.0
+
+# Data Processing
+langchain>=0.1.0
+langchain-community>=0.0.10
+langchain-text-splitters>=0.0.1
+pypdf>=3.17.0
+
+# Machine Learning
+sentence-transformers>=2.2.0
+faiss-cpu>=1.7.4
+scikit-learn>=1.3.0
+numpy>=1.24.0
+
+# APIs & Configuration
+python-dotenv>=1.0.0
+google-genai>=0.3.0
+
+# Utilities
+requests>=2.31.0
+
+# Optional dependencies for production
+# redis>=5.0.0  # For caching (uncomment if using)
+# gunicorn>=21.0.0  # For deployment (uncomment if using)
+# psycopg2-binary>=2.9.0  # PostgreSQL (uncomment if using)

@@ -1,0 +1,21 @@
+{
+    "method": [
+        "Two parameter-reduction techniques to lower memory consumption and increase training speed of BERT.",
+        "Factorized embedding parameterization: Decomposing the large vocabulary embedding matrix into two smaller matrices, separating hidden layer size from vocabulary embedding size.",
+        "Cross-layer parameter sharing: Preventing parameters from growing with network depth by sharing parameters across layers.",
+        "Self-supervised loss for Sentence-Order Prediction (SOP): Focuses on inter-sentence coherence to address the ineffectiveness of BERT's Next Sentence Prediction (NSP) loss."
+    ],
+    "datasets": [
+        "GLUE benchmark",
+        "RACE benchmark (Lai et al., 2017)",
+        "SQuAD benchmarks"
+    ],
+    "limitations": [
+        "GPU/TPU memory limitations when increasing model size.",
+        "Longer training times for larger models.",
+        "Unexpected model degradation when simply increasing model size (e.g., BERT-xlarge showing worse performance than BERT-large).",
+        "Significant communication overhead in distributed training due to a large number of parameters.",
+        "Ineffectiveness of the original BERT's Next Sentence Prediction (NSP) loss in modeling inter-sentence coherence."
+    ],
+    "future_work": []
+}

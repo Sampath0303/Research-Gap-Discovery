@@ -1,0 +1,21 @@
+{
+    "method": [
+        "Pre-training a smaller general-purpose language representation model called DistilBERT.",
+        "Leveraging knowledge distillation during the pre-training phase to reduce model size.",
+        "Introducing a triple loss function combining language modeling (Lmlm), distillation (Lce), and cosine-distance (Lcos) losses to align student and teacher hidden states.",
+        "Student (DistilBERT) architecture maintains the general structure of BERT, but token-type embeddings and the pooler are removed, and the number of layers is reduced by a factor of 2.",
+        "Initializing the student model from the teacher by taking one layer out of two.",
+        "Using a softmax-temperature for distillation loss calculation, applied to both student and teacher at training time, and set to 1 at inference.",
+        "Demonstrating capabilities for on-device computations through proof-of-concept and comparative studies."
+    ],
+    "datasets": [
+        "Evaluated on the GLUE benchmark tasks (CoLA, MNLI, MRPC, QNLI, QQP, RTE, SST-2, STS-B, WNLI) for language understanding capabilities.",
+        "Evaluated on IMDb for test accuracy.",
+        "Evaluated on SQuAD 1.1 for EM/F1 on the development set."
+    ],
+    "limitations": [
+        "DistilBERT retains 97% of BERT's language understanding capabilities, indicating a minor performance reduction (3%) compared to the larger teacher model.",
+        "Performance on various downstream tasks (GLUE, IMDb, SQuAD 1.1) is generally comparable to but slightly lower than BERT-base."
+    ],
+    "future_work": []
+}
