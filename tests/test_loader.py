@@ -1,14 +1,10 @@
-import _bootstrap
+from pathlib import Path
+
 from src.pdf_loader import load_all_pdfs
 
-docs = load_all_pdfs(_bootstrap.PAPERS_DIR)
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PAPERS_DIR = PROJECT_ROOT / "data" / "papers"
 
-print(f"\nTotal Pages Loaded: {len(docs)}")
+docs = load_all_pdfs(PAPERS_DIR)
 
-print("\nFirst Page Preview:\n")
-
-print(docs[0].page_content[:1000])
-
-print("\nSource PDF:")
-
-print(docs[0].metadata["source_file"])
+print("Documents:", len(docs))

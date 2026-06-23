@@ -1,4 +1,4 @@
-import _bootstrap
+from tests import _bootstrap
 from src.models import embedding_model
 
 print("Loading model...")

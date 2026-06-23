@@ -1,0 +1,512 @@
+[
+  {
+    "query": "attention mechanisms in transformer models",
+    "retrieved_count": 5,
+    "unique_papers": 1,
+    "papers": [
+      {
+        "rank": 1,
+        "paper": "Attention is All you need.pdf",
+        "page": 4,
+        "distance": 12.770972104679487,
+        "similarity": 0.8211828470230103,
+        "content_preview": "computational cost is similar to that of single-head attention with full dimensionality. 3.2.3 Appli..."
+      },
+      {
+        "rank": 2,
+        "paper": "Attention is All you need.pdf",
+        "page": 1,
+        "distance": 12.23978455029441,
+        "similarity": 0.7670498788356781,
+        "content_preview": "t. This inherently sequential nature precludes parallelization within training examples, which becom..."
+      },
+      {
+        "rank": 3,
+        "paper": "Attention is All you need.pdf",
+        "page": 1,
+        "distance": 11.961543877736897,
+        "similarity": 0.7404221892356873,
+        "content_preview": "[2, 19]. In all but a few cases , however, such attention mechanisms are used in conjunction with a ..."
+      },
+      {
+        "rank": 4,
+        "paper": "Attention is All you need.pdf",
+        "page": 0,
+        "distance": 10.53675016291979,
+        "similarity": 0.7216487973928452,
+        "content_preview": "networks that include an encoder and a decoder. The best performing models also connect the encoder ..."
+      },
+      {
+        "rank": 5,
+        "paper": "Attention is All you need.pdf",
+        "page": 9,
+        "distance": 10.501859611095153,
+        "similarity": 0.7618643641471863,
+        "content_preview": "or convolutional layers. On both WMT 2014 English-to-German and WMT 2014 English-to-French translati..."
+      }
+    ],
+    "avg_similarity": 0.7624336153268814,
+    "diversity_score": 20.0,
+    "quality_score": 59.3703530728817,
+    "timestamp": "2026-06-23T18:22:49.510679"
+  },
+  {
+    "query": "BERT pre-training and fine-tuning strategies",
+    "retrieved_count": 5,
+    "unique_papers": 4,
+    "papers": [
+      {
+        "rank": 1,
+        "paper": "DEBERTA.pdf",
+        "page": 4,
+        "distance": 16.450834777278132,
+        "similarity": 0.7953224182128906,
+        "content_preview": "(EMD). In the empirical study, we compare these two methods of incorporating absolute positions and ..."
+      },
+      {
+        "rank": 2,
+        "paper": "RoBERTa.pdf",
+        "page": 3,
+        "distance": 11.08852330163138,
+        "similarity": 0.7858709394931793,
+        "content_preview": "BERT that improves upon the ori ginal architecture through dynamic masking, larger batch sizes, and ..."
+      },
+      {
+        "rank": 3,
+        "paper": "ELECTRA.pdf",
+        "page": 3,
+        "distance": 10.20956233099864,
+        "similarity": 0.8088091611862183,
+        "content_preview": "data in the future. Our model architecture and most hyperparameters are the same as BERT’s. For ﬁne-..."
+      },
+      {
+        "rank": 4,
+        "paper": "ALBERT.pdf",
+        "page": 3,
+        "distance": 10.155338895242515,
+        "similarity": 0.6787442862987518,
+        "content_preview": "decision for ALBERT is to share all parameters across layers. We compare this design decision agains..."
+      },
+      {
+        "rank": 5,
+        "paper": "ELECTRA.pdf",
+        "page": 8,
+        "distance": 10.013544019703225,
+        "similarity": 0.8712141811847687,
+        "content_preview": "as BERT because XLNet only generates 15% of the input tokens in this way. Like ELECTRA, XL- Net may ..."
+      }
+    ],
+    "avg_similarity": 0.7879921972751618,
+    "diversity_score": 80.0,
+    "quality_score": 79.15945380926132,
+    "timestamp": "2026-06-23T18:22:50.350645"
+  },
+  {
+    "query": "handling long-range dependencies in neural networks",
+    "retrieved_count": 5,
+    "unique_papers": 3,
+    "papers": [
+      {
+        "rank": 1,
+        "paper": "Attention is All you need.pdf",
+        "page": 5,
+        "distance": 19.861389353347448,
+        "similarity": 0.770907998085022,
+        "content_preview": "in a typical sequence transduction encoder or decoder. Motivating our use of self-attention we consi..."
+      },
+      {
+        "rank": 2,
+        "paper": "Attention is All you need.pdf",
+        "page": 5,
+        "distance": 18.460409339439863,
+        "similarity": 0.7783755660057068,
+        "content_preview": "and output sequences, the easier it is to learn long-range dependencies . Hence we also compare the ..."
+      },
+      {
+        "rank": 3,
+        "paper": "Attention is All you need.pdf",
+        "page": 10,
+        "distance": 15.147060316091938,
+        "similarity": 0.7345702946186066,
+        "content_preview": "Denis Yarats, and Yann N. Dauphin. Convolu- tional sequence to sequence learning. arXiv preprint arX..."
+      },
+      {
+        "rank": 4,
+        "paper": "DEBERTA.pdf",
+        "page": 17,
+        "distance": 14.109524768925851,
+        "similarity": 0.6477296352386475,
+        "content_preview": "on the RACE task is shown in Sequence length Middle High Accuracy 512 88.8 85.0 86.3 768 88.7 86.3 8..."
+      },
+      {
+        "rank": 5,
+        "paper": "RoBERTa.pdf",
+        "page": 1,
+        "distance": 13.36103651728722,
+        "similarity": 0.7207148671150208,
+        "content_preview": "to generate meaningful word embed dings and BiLSTM's strength to capture long-term dependencies. The..."
+      }
+    ],
+    "avg_similarity": 0.7304596722126007,
+    "diversity_score": 60.0,
+    "quality_score": 69.13217705488205,
+    "timestamp": "2026-06-23T18:22:51.081422"
+  },
+  {
+    "query": "data augmentation techniques for NLP",
+    "retrieved_count": 5,
+    "unique_papers": 4,
+    "papers": [
+      {
+        "rank": 1,
+        "paper": "RoBERTa.pdf",
+        "page": 0,
+        "distance": 13.627732992318458,
+        "similarity": 0.7505127191543579,
+        "content_preview": "sentiment analysis enables research ers and practitioners to extract valuable insights and leve rage..."
+      },
+      {
+        "rank": 2,
+        "paper": "GPT-3.pdf",
+        "page": 4,
+        "distance": 12.189495122550756,
+        "similarity": 0.7364609688520432,
+        "content_preview": "GPT-3 are still distinguishable from human writings, but it’s possible that newer language models ar..."
+      },
+      {
+        "rank": 3,
+        "paper": "T5_Transforme.pdf",
+        "page": 3,
+        "distance": 10.297686036382187,
+        "similarity": 0.7005169093608856,
+        "content_preview": "Chapter 2 Problem Statement To create a brief, precise summary of a lengthy text while keeping the c..."
+      },
+      {
+        "rank": 4,
+        "paper": "RoBERTa.pdf",
+        "page": 1,
+        "distance": 10.16874910843967,
+        "similarity": 0.715921938419342,
+        "content_preview": "and tourism. Integration of advanced techniques, such a s hybrid models that combine sequential and ..."
+      },
+      {
+        "rank": 5,
+        "paper": "DEBERTA.pdf",
+        "page": 1,
+        "distance": 9.050236251070451,
+        "similarity": 0.7285543531179428,
+        "content_preview": "incorporates absolute word position embeddings right before the softmax layer where the model decode..."
+      }
+    ],
+    "avg_similarity": 0.7263933777809143,
+    "diversity_score": 80.0,
+    "quality_score": 74.847536444664,
+    "timestamp": "2026-06-23T18:22:51.791573"
+  },
+  {
+    "query": "multilingual model training approaches",
+    "retrieved_count": 5,
+    "unique_papers": 4,
+    "papers": [
+      {
+        "rank": 1,
+        "paper": "T5_Transforme.pdf",
+        "page": 5,
+        "distance": 5.295813453137548,
+        "similarity": 0.6585337519645691,
+        "content_preview": "to accomplish compression by re-interpreting and fusing the picked out subjects into more concise on..."
+      },
+      {
+        "rank": 2,
+        "paper": "ELECTRA.pdf",
+        "page": 1,
+        "distance": 5.07879764945365,
+        "similarity": 0.740803137421608,
+        "content_preview": "than existing generative approaches for language representation learning. 2 M ETHOD We ﬁrst describe..."
+      },
+      {
+        "rank": 3,
+        "paper": "DistilBERT.pdf",
+        "page": 3,
+        "distance": 5.030972760217241,
+        "similarity": 0.798969566822052,
+        "content_preview": "is multi-linguality: Tsai et al. adopts a similar approach to us by pre-training a multilingual mode..."
+      },
+      {
+        "rank": 4,
+        "paper": "ALBERT.pdf",
+        "page": 11,
+        "distance": 4.939952937774092,
+        "similarity": 0.6911458522081375,
+        "content_preview": "Ido Dagan, and Danilo Giampiccolo. The ﬁfth PASCAL recognizing textual entailment challenge. In TAC,..."
+      },
+      {
+        "rank": 5,
+        "paper": "ELECTRA.pdf",
+        "page": 3,
+        "distance": 4.794255871982963,
+        "similarity": 0.7906008362770081,
+        "content_preview": "the span of text answering a question, and 2.0, in which some questions are unanswerable by the pass..."
+      }
+    ],
+    "avg_similarity": 0.736010628938675,
+    "diversity_score": 80.0,
+    "quality_score": 75.52074402570724,
+    "timestamp": "2026-06-23T18:22:52.520636"
+  },
+  {
+    "query": "distillation methods for model compression",
+    "retrieved_count": 5,
+    "unique_papers": 3,
+    "papers": [
+      {
+        "rank": 1,
+        "paper": "ALBERT.pdf",
+        "page": 14,
+        "distance": 11.582165193353443,
+        "similarity": 0.65782231092453,
+        "content_preview": "1631–1642, Seattle, Washington, USA, October 2013. Association for Computa- tional Linguistics. URL ..."
+      },
+      {
+        "rank": 2,
+        "paper": "DistilBERT.pdf",
+        "page": 4,
+        "distance": 11.43971088368084,
+        "similarity": 0.6925352960824966,
+        "content_preview": "comprehension faster. ArXiv, abs/1904.00796, 2019. Iulia Turc, Ming-Wei Chang, Kenton Lee, and Krist..."
+      },
+      {
+        "rank": 3,
+        "paper": "DistilBERT.pdf",
+        "page": 1,
+        "distance": 10.894786463498686,
+        "similarity": 0.7668371796607971,
+        "content_preview": "language model can achieve similar performance on a variety of downstream tasks, while being 60% fas..."
+      },
+      {
+        "rank": 4,
+        "paper": "DistilBERT.pdf",
+        "page": 0,
+        "distance": 8.097033358856605,
+        "similarity": 0.7107956111431122,
+        "content_preview": "most prior work investigated the use of distillation for building task-speciﬁc models, we leverage k..."
+      },
+      {
+        "rank": 5,
+        "paper": "BERT.pdf",
+        "page": 1,
+        "distance": 7.92836212652566,
+        "similarity": 0.6161669492721558,
+        "content_preview": "encoder capacity alone, is a critical factor for adapting pretrained encoders to learned sparse retr..."
+      }
+    ],
+    "avg_similarity": 0.6888314694166183,
+    "diversity_score": 60.0,
+    "quality_score": 66.21820285916328,
+    "timestamp": "2026-06-23T18:22:53.453691"
+  },
+  {
+    "query": "optimization algorithms for deep learning",
+    "retrieved_count": 5,
+    "unique_papers": 3,
+    "papers": [
+      {
+        "rank": 1,
+        "paper": "RoBERTa.pdf",
+        "page": 5,
+        "distance": 10.73563673913269,
+        "similarity": 0.6887092441320419,
+        "content_preview": "Engineering, Technology & Applied Science Research Vol. 15, No. 1, 2025, 20167-20174 20172 www.etasr..."
+      },
+      {
+        "rank": 2,
+        "paper": "BERT.pdf",
+        "page": 4,
+        "distance": 9.108738419539513,
+        "similarity": 0.6518906205892563,
+        "content_preview": "Conference on Information and Knowledge Management. 3642–3646. Sebastian Bruch, Franco Maria Nardini..."
+      },
+      {
+        "rank": 3,
+        "paper": "ELECTRA.pdf",
+        "page": 4,
+        "distance": 9.072893733978734,
+        "similarity": 0.669998824596405,
+        "content_preview": "task for the discriminator, preventing it from learning as effectively. In particular, the discrimin..."
+      },
+      {
+        "rank": 4,
+        "paper": "RoBERTa.pdf",
+        "page": 5,
+        "distance": 8.931105203470139,
+        "similarity": 0.6993066370487213,
+        "content_preview": "a batch size o f 64 and a sequence length of 100 tokens. The LSTM architectur e incorporated 128 hid..."
+      },
+      {
+        "rank": 5,
+        "paper": "RoBERTa.pdf",
+        "page": 6,
+        "distance": 8.42553325308649,
+        "similarity": 0.6724348813295364,
+        "content_preview": "they are best suited for simpler tasks. RoBERTa's success can be attributed to its multihea d self- ..."
+      }
+    ],
+    "avg_similarity": 0.6764680415391922,
+    "diversity_score": 60.0,
+    "quality_score": 65.35276290774345,
+    "timestamp": "2026-06-23T18:22:54.532249"
+  },
+  {
+    "query": "interpretability and explainability in transformers",
+    "retrieved_count": 5,
+    "unique_papers": 4,
+    "papers": [
+      {
+        "rank": 1,
+        "paper": "ALBERT.pdf",
+        "page": 11,
+        "distance": 10.182622866843985,
+        "similarity": 0.6494543254375458,
+        "content_preview": "Radford, and Ilya Sutskever. Generating long sequences with sparse transformers. arXiv preprint arXi..."
+      },
+      {
+        "rank": 2,
+        "paper": "GPT-3.pdf",
+        "page": 8,
+        "distance": 9.54550057167355,
+        "similarity": 0.6873515546321869,
+        "content_preview": "A Survey on GPT-3 A PREPRINT [CKB+21] Karl Cobbe, Vineet Kosaraju, Mohammad Bavarian, Jacob Hilton, ..."
+      },
+      {
+        "rank": 3,
+        "paper": "DEBERTA.pdf",
+        "page": 9,
+        "distance": 8.805800664930679,
+        "similarity": 0.66337451338768,
+        "content_preview": "pp. 2978–2988, 2019. Marie-Catherine De Marneffe, Mandy Simons, and Judith Tonhauser. The commitment..."
+      },
+      {
+        "rank": 4,
+        "paper": "GPT-3.pdf",
+        "page": 3,
+        "distance": 8.763244286968387,
+        "similarity": 0.6497558504343033,
+        "content_preview": "speciﬁc types of NLP problems [ LWLQ21]. Generative Pre-training Transformers (GPT) is the ﬁrst publ..."
+      },
+      {
+        "rank": 5,
+        "paper": "ELECTRA.pdf",
+        "page": 10,
+        "distance": 8.734030570844105,
+        "similarity": 0.6064023599028587,
+        "content_preview": "from scratch. JMLR, 2011. Andrew M Dai and Quoc V Le. Semi-supervised sequence learning. In NeurIPS,..."
+      }
+    ],
+    "avg_similarity": 0.6512677207589149,
+    "diversity_score": 80.0,
+    "quality_score": 69.58874045312405,
+    "timestamp": "2026-06-23T18:22:55.512551"
+  },
+  {
+    "query": "positional encoding in sequence models",
+    "retrieved_count": 5,
+    "unique_papers": 2,
+    "papers": [
+      {
+        "rank": 1,
+        "paper": "Attention is All you need.pdf",
+        "page": 8,
+        "distance": 15.049322726298382,
+        "similarity": 0.7522188127040863,
+        "content_preview": "sinusoidal positional encoding with learned positional embeddings , and observe nearly identical res..."
+      },
+      {
+        "rank": 2,
+        "paper": "Attention is All you need.pdf",
+        "page": 5,
+        "distance": 14.285665853984586,
+        "similarity": 0.7701608538627625,
+        "content_preview": "for different layer types. n is the sequence length, d is the representation dimension, k is the ker..."
+      },
+      {
+        "rank": 3,
+        "paper": "Attention is All you need.pdf",
+        "page": 8,
+        "distance": 12.384529825276001,
+        "similarity": 0.7251183092594147,
+        "content_preview": "4.92 25.7 big 6 1024 4096 16 0.3 300K 4.33 26.4 213 development set, newstest2013. We used beam sear..."
+      },
+      {
+        "rank": 4,
+        "paper": "T5_Transforme.pdf",
+        "page": 15,
+        "distance": 12.302791824208397,
+        "similarity": 0.7464020550251007,
+        "content_preview": "Decoder • As shown in set of K and V attention vectors. Each decoder will make use of these. • We em..."
+      },
+      {
+        "rank": 5,
+        "paper": "T5_Transforme.pdf",
+        "page": 14,
+        "distance": 12.105220650492106,
+        "similarity": 0.6750753223896027,
+        "content_preview": "Encoder • as shown in algorithms which give 512 sized vectors as output. This vector will be added t..."
+      }
+    ],
+    "avg_similarity": 0.7337950706481934,
+    "diversity_score": 40.0,
+    "quality_score": 63.365654945373535,
+    "timestamp": "2026-06-23T18:22:56.339488"
+  },
+  {
+    "query": "scaling language models to production",
+    "retrieved_count": 5,
+    "unique_papers": 4,
+    "papers": [
+      {
+        "rank": 1,
+        "paper": "T5_Transforme.pdf",
+        "page": 5,
+        "distance": 10.064556843889308,
+        "similarity": 0.6494335681200027,
+        "content_preview": "for pattern recognition in texts and establish- ing a correlation between diﬀerent words.Because the..."
+      },
+      {
+        "rank": 2,
+        "paper": "DistilBERT.pdf",
+        "page": 0,
+        "distance": 8.124750154936393,
+        "similarity": 0.7975590527057648,
+        "content_preview": "language models. The last two years have seen the rise of Transfer Learning approaches in Natural La..."
+      },
+      {
+        "rank": 3,
+        "paper": "ALBERT.pdf",
+        "page": 2,
+        "distance": 8.035159247242337,
+        "similarity": 0.7130599915981293,
+        "content_preview": "hidden size to 2048 leads to model degradation and hence worse performance. Therefore, scaling up re..."
+      },
+      {
+        "rank": 4,
+        "paper": "DEBERTA.pdf",
+        "page": 10,
+        "distance": 6.959702608493055,
+        "similarity": 0.707285538315773,
+        "content_preview": "Published as a conference paper at ICLR 2021 William B Dolan and Chris Brockett. Automatically const..."
+      },
+      {
+        "rank": 5,
+        "paper": "ALBERT.pdf",
+        "page": 2,
+        "distance": 6.8683183301917765,
+        "similarity": 0.7125130593776703,
+        "content_preview": "two years is the shift from pre-training word embeddings, whether standard (Mikolov et al., 2013; Pe..."
+      }
+    ],
+    "avg_similarity": 0.715970242023468,
+    "diversity_score": 80.0,
+    "quality_score": 74.11791694164276,
+    "timestamp": "2026-06-23T18:22:57.046109"
+  }
+]

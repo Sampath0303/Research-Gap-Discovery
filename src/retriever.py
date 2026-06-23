@@ -25,9 +25,35 @@ def search_documents(
 
     results = []
 
-    for idx in indices[0]:
+    for rank, idx in enumerate(indices[0]):
+
+        if idx < 0:
+            continue
+
+        chunk = chunks[idx]
+
         results.append(
-            chunks[idx]
+            {
+                "content":
+                    chunk.page_content,
+
+                "paper":
+                    chunk.metadata.get(
+                        "source_file",
+                        "Unknown"
+                    ),
+
+                "page":
+                    chunk.metadata.get(
+                        "page",
+                        "?"
+                    ),
+
+                "score":
+                    float(
+                        distances[0][rank]
+                    )
+            }
         )
 
     return results

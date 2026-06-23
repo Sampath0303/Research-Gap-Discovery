@@ -1,0 +1,174 @@
+================================================================================
+RETRIEVAL QUALITY EVALUATION REPORT
+================================================================================
+
+OVERALL METRICS
+--------------------------------------------------------------------------------
+Total Queries Evaluated: 10
+Average Quality Score: 69.67/100
+Average Similarity: 0.7210
+Average Diversity: 64.00/100
+
+Quality Level: FAIR
+
+DETAILED RESULTS
+================================================================================
+
+Query #1: attention mechanisms in transformer models
+--------------------------------------------------------------------------------
+  Quality Score: 59.37/100
+  Avg Similarity: 0.7624
+  Diversity: 20.00%
+  Retrieved Papers: 1 unique
+
+  Top Retrieved Papers:
+    Rank 1: Attention is All you need.pdf (Page 4, Similarity: 0.8212)
+    Rank 2: Attention is All you need.pdf (Page 1, Similarity: 0.7670)
+    Rank 3: Attention is All you need.pdf (Page 1, Similarity: 0.7404)
+    Rank 4: Attention is All you need.pdf (Page 0, Similarity: 0.7216)
+    Rank 5: Attention is All you need.pdf (Page 9, Similarity: 0.7619)
+
+Query #2: BERT pre-training and fine-tuning strategies
+--------------------------------------------------------------------------------
+  Quality Score: 79.16/100
+  Avg Similarity: 0.7880
+  Diversity: 80.00%
+  Retrieved Papers: 4 unique
+
+  Top Retrieved Papers:
+    Rank 1: DEBERTA.pdf (Page 4, Similarity: 0.7953)
+    Rank 2: RoBERTa.pdf (Page 3, Similarity: 0.7859)
+    Rank 3: ELECTRA.pdf (Page 3, Similarity: 0.8088)
+    Rank 4: ALBERT.pdf (Page 3, Similarity: 0.6787)
+    Rank 5: ELECTRA.pdf (Page 8, Similarity: 0.8712)
+
+Query #3: handling long-range dependencies in neural networks
+--------------------------------------------------------------------------------
+  Quality Score: 69.13/100
+  Avg Similarity: 0.7305
+  Diversity: 60.00%
+  Retrieved Papers: 3 unique
+
+  Top Retrieved Papers:
+    Rank 1: Attention is All you need.pdf (Page 5, Similarity: 0.7709)
+    Rank 2: Attention is All you need.pdf (Page 5, Similarity: 0.7784)
+    Rank 3: Attention is All you need.pdf (Page 10, Similarity: 0.7346)
+    Rank 4: DEBERTA.pdf (Page 17, Similarity: 0.6477)
+    Rank 5: RoBERTa.pdf (Page 1, Similarity: 0.7207)
+
+Query #4: data augmentation techniques for NLP
+--------------------------------------------------------------------------------
+  Quality Score: 74.85/100
+  Avg Similarity: 0.7264
+  Diversity: 80.00%
+  Retrieved Papers: 4 unique
+
+  Top Retrieved Papers:
+    Rank 1: RoBERTa.pdf (Page 0, Similarity: 0.7505)
+    Rank 2: GPT-3.pdf (Page 4, Similarity: 0.7365)
+    Rank 3: T5_Transforme.pdf (Page 3, Similarity: 0.7005)
+    Rank 4: RoBERTa.pdf (Page 1, Similarity: 0.7159)
+    Rank 5: DEBERTA.pdf (Page 1, Similarity: 0.7286)
+
+Query #5: multilingual model training approaches
+--------------------------------------------------------------------------------
+  Quality Score: 75.52/100
+  Avg Similarity: 0.7360
+  Diversity: 80.00%
+  Retrieved Papers: 4 unique
+
+  Top Retrieved Papers:
+    Rank 1: T5_Transforme.pdf (Page 5, Similarity: 0.6585)
+    Rank 2: ELECTRA.pdf (Page 1, Similarity: 0.7408)
+    Rank 3: DistilBERT.pdf (Page 3, Similarity: 0.7990)
+    Rank 4: ALBERT.pdf (Page 11, Similarity: 0.6911)
+    Rank 5: ELECTRA.pdf (Page 3, Similarity: 0.7906)
+
+Query #6: distillation methods for model compression
+--------------------------------------------------------------------------------
+  Quality Score: 66.22/100
+  Avg Similarity: 0.6888
+  Diversity: 60.00%
+  Retrieved Papers: 3 unique
+
+  Top Retrieved Papers:
+    Rank 1: ALBERT.pdf (Page 14, Similarity: 0.6578)
+    Rank 2: DistilBERT.pdf (Page 4, Similarity: 0.6925)
+    Rank 3: DistilBERT.pdf (Page 1, Similarity: 0.7668)
+    Rank 4: DistilBERT.pdf (Page 0, Similarity: 0.7108)
+    Rank 5: BERT.pdf (Page 1, Similarity: 0.6162)
+
+Query #7: optimization algorithms for deep learning
+--------------------------------------------------------------------------------
+  Quality Score: 65.35/100
+  Avg Similarity: 0.6765
+  Diversity: 60.00%
+  Retrieved Papers: 3 unique
+
+  Top Retrieved Papers:
+    Rank 1: RoBERTa.pdf (Page 5, Similarity: 0.6887)
+    Rank 2: BERT.pdf (Page 4, Similarity: 0.6519)
+    Rank 3: ELECTRA.pdf (Page 4, Similarity: 0.6700)
+    Rank 4: RoBERTa.pdf (Page 5, Similarity: 0.6993)
+    Rank 5: RoBERTa.pdf (Page 6, Similarity: 0.6724)
+
+Query #8: interpretability and explainability in transformers
+--------------------------------------------------------------------------------
+  Quality Score: 69.59/100
+  Avg Similarity: 0.6513
+  Diversity: 80.00%
+  Retrieved Papers: 4 unique
+
+  Top Retrieved Papers:
+    Rank 1: ALBERT.pdf (Page 11, Similarity: 0.6495)
+    Rank 2: GPT-3.pdf (Page 8, Similarity: 0.6874)
+    Rank 3: DEBERTA.pdf (Page 9, Similarity: 0.6634)
+    Rank 4: GPT-3.pdf (Page 3, Similarity: 0.6498)
+    Rank 5: ELECTRA.pdf (Page 10, Similarity: 0.6064)
+
+Query #9: positional encoding in sequence models
+--------------------------------------------------------------------------------
+  Quality Score: 63.37/100
+  Avg Similarity: 0.7338
+  Diversity: 40.00%
+  Retrieved Papers: 2 unique
+
+  Top Retrieved Papers:
+    Rank 1: Attention is All you need.pdf (Page 8, Similarity: 0.7522)
+    Rank 2: Attention is All you need.pdf (Page 5, Similarity: 0.7702)
+    Rank 3: Attention is All you need.pdf (Page 8, Similarity: 0.7251)
+    Rank 4: T5_Transforme.pdf (Page 15, Similarity: 0.7464)
+    Rank 5: T5_Transforme.pdf (Page 14, Similarity: 0.6751)
+
+Query #10: scaling language models to production
+--------------------------------------------------------------------------------
+  Quality Score: 74.12/100
+  Avg Similarity: 0.7160
+  Diversity: 80.00%
+  Retrieved Papers: 4 unique
+
+  Top Retrieved Papers:
+    Rank 1: T5_Transforme.pdf (Page 5, Similarity: 0.6494)
+    Rank 2: DistilBERT.pdf (Page 0, Similarity: 0.7976)
+    Rank 3: ALBERT.pdf (Page 2, Similarity: 0.7131)
+    Rank 4: DEBERTA.pdf (Page 10, Similarity: 0.7073)
+    Rank 5: ALBERT.pdf (Page 2, Similarity: 0.7125)
+
+================================================================================
+SUMMARY STATISTICS
+================================================================================
+
+Quality Score - Min: 59.37, Max: 79.16, Mean: 69.67, Std: 5.90
+Similarity - Min: 0.6513, Max: 0.7880, Mean: 0.7210, Std: 0.0382
+Diversity - Min: 20.00, Max: 80.00, Mean: 64.00, Std: 19.60
+
+================================================================================
+RECOMMENDATIONS
+================================================================================
+
+[WARN] Retrieval quality is FAIR.
+  Consider the following improvements:
+
+================================================================================
+Report Generated: 2026-06-23 18:22:57
+================================================================================

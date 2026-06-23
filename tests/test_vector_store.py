@@ -1,16 +1,68 @@
-import _bootstrap
+from pathlib import Path
+
 from src.pdf_loader import load_all_pdfs
 from src.chunker import create_chunks
 from src.vector_store import create_vector_store
 
-docs = load_all_pdfs(_bootstrap.PAPERS_DIR)
 
-chunks = create_chunks(docs)
+PROJECT_ROOT = (
+    Path(__file__)
+    .resolve()
+    .parent
+    .parent
+)
 
-index, embeddings, _ = create_vector_store(chunks)
+PAPERS_DIR = (
+    PROJECT_ROOT
+    / "data"
+    / "papers"
+)
 
-print("\nTotal Chunks:", len(chunks))
+print(
+    "PAPERS_DIR:",
+    PAPERS_DIR
+)
 
-print("Embedding Shape:", embeddings.shape)
+print(
+    "Exists:",
+    PAPERS_DIR.exists()
+)
 
-print("Vectors Stored in FAISS:", index.ntotal)
+docs = load_all_pdfs(
+    PAPERS_DIR
+)
+
+print(
+    "Documents:",
+    len(docs)
+)
+
+chunks = create_chunks(
+    docs
+)
+
+print(
+    "Chunks:",
+    len(chunks)
+)
+
+index, embeddings, _ = (
+    create_vector_store(
+        chunks
+    )
+)
+
+print(
+    "\nTotal Chunks:",
+    len(chunks)
+)
+
+print(
+    "Embedding Shape:",
+    embeddings.shape
+)
+
+print(
+    "Vectors Stored in FAISS:",
+    index.ntotal
+)

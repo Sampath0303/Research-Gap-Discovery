@@ -1,0 +1,244 @@
+================================================================================
+QUICK REFERENCE GUIDE - Incremental Indexing
+Research Gap Discovery Engine
+================================================================================
+
+QUICK START
+================================================================================
+
+Run incremental indexing:
+
+  $ python -m src.incremental_indexer
+
+Output will show:
+  - PDFs detected
+  - Chunks added
+  - Embeddings generated
+  - Index updated status
+
+
+PERFORMANCE BASELINE
+================================================================================
+
+Baseline tests:
+
+  $ python tests/test_performance_quick.py      # 50 PDFs (~5-6 min)
+  $ python tests/test_performance.py             # All sizes (10+ hours)
+
+Generate scaled datasets:
+
+  $ python tests/generate_large_dataset.py      # Create 50/100/250/500 PDF sets
+
+
+TESTING
+================================================================================
+
+Run all tests:
+
+  $ python -m pytest tests/test_incremental_indexing.py -v
+
+Run specific test:
+
+  $ pytest tests/test_incremental_indexing.py::TestIncrementalIndexer -v
+
+Run demo:
+
+  $ python tests/demo_incremental.py
+
+
+CODE USAGE
+================================================================================
+
+Incremental batch processing:
+
+  from src.incremental_indexer import run_incremental_indexing
+  
+  stats = run_incremental_indexing()
+  print(f"Added {stats['total_chunks_added']} chunks")
+
+Check index stats:
+
+  from src.vector_store import get_index_stats
+  
+  stats = get_index_stats()
+  print(f"Total vectors: {stats['ntotal']}")
+  print(f"Total chunks: {stats['chunk_count']}")
+
+Manual PDF processing:
+
+  from src.incremental_indexer import IncrementalIndexer
+  
+  indexer = IncrementalIndexer()
+  chunks, pages, count = indexer.process_new_pdf(pdf_path)
+  indexer.append_to_faiss(chunks)
+  indexer.save_updated_index()
+
+
+MONITORING
+================================================================================
+
+Check processing status:
+
+  from src.paper_registry import load_registry
+  
+  registry = load_registry()
+  for pdf_name, info in registry.items():
+      if info.get('processed'):
+          print(f"{pdf_name}: {info['pages']} pages, "
+                f"{info.get('chunk_count', '?')} chunks")
+
+View FAISS index:
+
+  import faiss
+  index = faiss.read_index("outputs/faiss.index")
+  print(f"Total vectors: {index.ntotal}")
+
+
+FILE LOCATIONS
+================================================================================
+
+Core Implementation:
+  - src/incremental_indexer.py (IncrementalIndexer class)
+  - src/vector_store.py (append_embeddings, save_updated_index, get_index_stats)
+  - src/paper_registry.py (update_paper function)
+
+Tests:
+  - tests/test_incremental_indexing.py (14 test methods)
+  - tests/test_performance.py (Full benchmark)
+  - tests/test_performance_quick.py (Quick 50-PDF baseline)
+  - tests/demo_incremental.py (Live demo)
+
+Data:
+  - outputs/paper_registry.json (Processing status)
+  - outputs/faiss.index (FAISS index)
+  - outputs/embeddings.npy (Embedding vectors)
+  - outputs/chunks.pkl (Chunk texts)
+
+Datasets:
+  - data/papers/ (Original 11 PDFs)
+  - data/scaled_papers_50/ (50 PDFs)
+  - data/scaled_papers_100/ (100 PDFs)
+  - data/scaled_papers_250/ (250 PDFs)
+  - data/scaled_papers_500/ (500 PDFs)
+
+
+REGISTRY FORMAT
+================================================================================
+
+paper_registry.json tracks:
+
+  {
+    "paper_name.pdf": {
+      "processed": true/false,
+      "pages": integer,
+      "limitations": integer,
+      "chunk_count": integer,
+      "embedding_count": integer,
+      "last_processed": "YYYY-MM-DD HH:MM:SS"
+    }
+  }
+
+Check if paper is processed:
+
+  registry = load_registry()
+  if registry.get("paper.pdf", {}).get("processed"):
+      print("Already processed")
+
+
+API REFERENCE
+================================================================================
+
+IncrementalIndexer Methods:
+
+  detect_new_pdfs() -> List[Path]
+    Returns list of unprocessed PDF paths
+  
+  process_new_pdf(pdf_path: Path) -> (List[str], int, int)
+    Returns (chunks, page_count, chunk_count)
+  
+  append_to_faiss(chunks: List[str]) -> int
+    Returns number of embeddings added
+  
+  process_incremental_batch() -> Dict
+    Processes all new PDFs, returns statistics
+  
+  save_updated_index() -> None
+    Saves updated FAISS index without rebuild
+
+Vector Store Functions:
+
+  append_embeddings(new, existing) -> np.ndarray
+    Concatenates embeddings arrays
+  
+  save_updated_index(index, embeddings, chunks) -> None
+    Saves updated index/embeddings/chunks
+  
+  get_index_stats() -> Dict
+    Returns {'ntotal': int, 'dimension': int, 'chunk_count': int}
+
+Registry Functions:
+
+  update_paper(pdf_name: str, updates: dict) -> None
+    Updates paper entry in registry
+
+
+TROUBLESHOOTING
+================================================================================
+
+Issue: "No new PDFs found"
+  Solution: Check outputs/paper_registry.json - ensure "processed" is false
+
+Issue: "Existing FAISS index not found"
+  Solution: Run full indexing first: python -m src.vector_store
+
+Issue: "Memory error"
+  Solution: Process in smaller batches using IncrementalIndexer.process_new_pdf()
+
+Issue: Test failures
+  Solution: Ensure sentence-transformers model is installed
+            pip install sentence-transformers
+
+Performance: Adding PDFs is slow
+  Solution: Normal - embedding generation takes ~200ms per chunk
+            For 50 chunks: ~10-15 seconds expected
+
+
+METRICS
+================================================================================
+
+Processing Speed:
+
+  Chunk extraction:      ~5-10 chunks/second
+  Embedding generation:  ~20-25 chunks/second
+  FAISS append:          <1 millisecond
+  Registry update:       <1 millisecond
+
+For 50-PDF baseline:
+  - 4,596 chunks
+  - 236 seconds total (30s chunking + 205s embeddings)
+  - 3.32 ms search latency
+
+For incremental single PDF (11 pages, ~55 chunks):
+  - ~15-20 seconds total
+  - 12-15x faster than full rebuild
+
+
+DOCUMENTATION
+================================================================================
+
+Full Documentation:
+  - INCREMENTAL_INDEXING_IMPLEMENTATION.txt
+  - STEP1_2_IMPLEMENTATION.txt
+  - PERFORMANCE_BASELINE_REPORT.txt
+
+These files contain:
+  - Architecture overview
+  - Detailed API reference
+  - Performance analysis
+  - Deployment readiness
+  - Best practices
+
+
+================================================================================
+Quick Reference v1.0 - 2026-06-23
+================================================================================

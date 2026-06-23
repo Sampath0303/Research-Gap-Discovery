@@ -27,6 +27,8 @@ google-genai>=0.3.0
 
 # Utilities
 requests>=2.31.0
+reportlab>=4.0.0
+rank-bm25>=0.2.2
 
 # Optional dependencies for production
 # redis>=5.0.0  # For caching (uncomment if using)

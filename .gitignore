@@ -4,3 +4,17 @@ __pycache__/
 .env
 .dist/
 *.pyc
+.pytest_cache/
+**/.pytest_cache/
+
+# Generated output files
+outputs/faiss.index
+outputs/embeddings.npy
+outputs/chunks.pkl
+outputs/gap_cache.json
+
+data
+
+# Logs
+*.log
+test_output.log

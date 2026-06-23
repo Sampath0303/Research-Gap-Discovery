@@ -1,0 +1,23 @@
+{
+    "method": [
+        "Abstractive Text Summarisation using T5 Transformer Architecture",
+        "Text to Text Transfer Transformer (T5) approach",
+        "Transfer Learning based model for abstractive text summarization",
+        "Natural Language Processing (NLP) techniques"
+    ],
+    "datasets": [
+        "Kaggle’s News Summary dataset (4515 examples)",
+        "Dataset contains Authorname, Headlines, Url of Article, Short text, Complete Article",
+        "News stories scraped from Hindu, Indian Times, and Guardian",
+        "Summarised news from Inshorts"
+    ],
+    "limitations": [
+        "Producing exact and meaningful summaries of big texts is a time-consuming endeavor",
+        "Machines face challenges in text summarization due to a deficiency of human knowledge, leading to varying results",
+        "Identifying informative segments and generating concise text is a main challenge in summarization",
+        "Determining the quality of a summary is challenging as there is no 'ideal' summary",
+        "Human summaries only meet up to 60% of the time when measuring sentence content overlap in news articles",
+        "Reformulating extracted and fused content into text with new phrases during the generation phase is difficult"
+    ],
+    "future_work": []
+}

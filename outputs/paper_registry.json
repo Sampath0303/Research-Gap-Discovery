@@ -1,0 +1,68 @@
+{
+    "ALBERT.pdf": {
+        "processed": true,
+        "pages": 16,
+        "limitations": 5,
+        "last_processed": "2026-06-23 11:02:55"
+    },
+    "Attention is All you need.pdf": {
+        "processed": true,
+        "pages": 15,
+        "limitations": 0,
+        "last_processed": "2026-06-23 11:02:55"
+    },
+    "BERT.pdf": {
+        "processed": true,
+        "pages": 5,
+        "limitations": 3,
+        "last_processed": "2026-06-23 11:02:55"
+    },
+    "DEBERTA.pdf": {
+        "processed": true,
+        "pages": 23,
+        "limitations": 0,
+        "last_processed": "2026-06-23 11:02:55"
+    },
+    "DistilBERT.pdf": {
+        "processed": true,
+        "pages": 5,
+        "limitations": 2,
+        "last_processed": "2026-06-23 11:02:55"
+    },
+    "ELECTRA.pdf": {
+        "processed": true,
+        "pages": 18,
+        "limitations": 0,
+        "last_processed": "2026-06-23 11:02:55"
+    },
+    "GPT-2.pdf": {
+        "processed": true,
+        "pages": 24,
+        "limitations": 4,
+        "last_processed": "2026-06-23 11:02:55"
+    },
+    "GPT-3.pdf": {
+        "processed": true,
+        "pages": 11,
+        "limitations": 3,
+        "last_processed": "2026-06-23 11:02:55"
+    },
+    "RoBERTa.pdf": {
+        "processed": true,
+        "pages": 8,
+        "limitations": 4,
+        "last_processed": "2026-06-23 11:02:55"
+    },
+    "T5_Transforme.pdf": {
+        "processed": true,
+        "pages": 23,
+        "limitations": 6,
+        "last_processed": "2026-06-23 11:02:55"
+    },
+    "AB.pdf": {
+        "processed": true,
+        "pages": 51,
+        "limitations": 0,
+        "last_processed": "2026-06-23 18:29:22"
+    }
+}

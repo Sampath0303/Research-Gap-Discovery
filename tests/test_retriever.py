@@ -1,4 +1,4 @@
-import _bootstrap
+from tests import _bootstrap
 from src.pdf_loader import load_all_pdfs
 from src.chunker import create_chunks
 from src.vector_store import create_vector_store
@@ -23,13 +23,13 @@ results = search_documents(
 
 for i, result in enumerate(results):
 
-    print(f"\nResult {i+1}")
+    print(f"\n{'=' * 60}")
+    print(f"Result {i+1}")
+    print(f"{'=' * 60}")
 
-    print(
-        "Source:",
-        result.metadata["source_file"]
-    )
+    print(f"Paper : {result['paper']}")
+    print(f"Page  : {result['page']}")
+    print(f"Score : {result['score']:.4f}")
 
-    print(
-        result.page_content[:500]
-    )
+    print("\nContent:\n")
+    print(result["content"][:500])

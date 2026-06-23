@@ -1,4 +1,4 @@
-import _bootstrap
+from tests import _bootstrap
 from src.pdf_loader import load_all_pdfs
 from src.chunker import create_chunks
 from src.vector_store import create_vector_store

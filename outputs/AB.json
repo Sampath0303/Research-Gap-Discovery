@@ -1,0 +1,12 @@
+{
+    "method": [
+        "ACTION-BED is a task-driven Bayesian Experimental Design (BED) framework that reformulates experimental design in terms of an expected future loss (EFL) on downstream actions, moving away from traditional expected uncertainty reductions (EUR).",
+        "It transforms EFLs into singly intractable objectives that can be jointly optimized with respect to both a design policy and a downstream action policy using stochastic gradients.",
+        "The method is naturally implicit, requiring only the ability to sample from the joint model over model parameters and data, and evaluate a differentiable downstream loss function, thus sidestepping the need for explicit posterior or marginal likelihood estimation.",
+        "ACTION-BED avoids the computational challenges associated with doubly intractable objectives found in traditional EUR-based methods, allowing for more effective, efficient, and simpler learning of design policies.",
+        "It provides easy customization to different downstream tasks and losses, addressing the difficulty of tailoring generic uncertainty measures (like Shannon entropy) to specific tasks."
+    ],
+    "datasets": [],
+    "limitations": [],
+    "future_work": []
+}

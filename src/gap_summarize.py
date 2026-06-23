@@ -4,6 +4,8 @@ import time
 from typing import Dict
 
 from src.config import GEMINI_API_KEY
+from src.gap_cache import (load_cache,save_cache)
+from src.local_gap_generator import generate_local_gap
 
 SECTION_KEY_MAP = {
     "theme": "theme",
@@ -124,6 +126,23 @@ def parse_gap_response(response_text: str) -> Dict[str, str]:
 
 
 def generate_gap(cluster_limitations):
+    cache = load_cache()
+
+    cache_key = str(
+        hash(
+            "|".join(
+                sorted(cluster_limitations)
+            )
+        )
+    )
+
+    if cache_key in cache:
+
+        print(
+            "Using cached gap"
+        )
+
+        return cache[cache_key]
     from google import genai
 
     client = genai.Client(api_key=GEMINI_API_KEY)
@@ -147,18 +166,81 @@ Limitations:
 """
 
     for attempt in range(3):
+
         try:
-            response = client.models.generate_content(
-                model="gemini-2.5-flash",
-                contents=prompt,
+
+            print(
+                f"Calling Gemini "
+                f"(attempt {attempt + 1})"
             )
-            return parse_gap_response(response.text or "")
-        except Exception:
+
+            response = (
+                client.models.generate_content(
+                    model="gemini-2.5-flash",
+                    contents=prompt,
+                )
+            )
+
+            print("Gemini success")
+
+            result = parse_gap_response(
+                response.text or ""
+            )
+
+            cache[cache_key] = result
+
+            save_cache(cache)
+
+            return result
+
+        except Exception as e:
+
+            print(
+                f"Gemini error: {e}"
+            )
+
             if attempt < 2:
                 time.sleep(5)
 
-    return {
-        "theme": "Generation Unavailable",
-        "research_gap": "The research gap could not be generated because Gemini is currently unavailable.",
-        "potential_idea": "Retry generation after confirming the Gemini API key and network access.",
-    }
+    # All Gemini attempts failed - use local fallback
+    print(
+        "[FALLBACK] Using local gap generator "
+        "(Gemini unavailable)"
+    )
+    
+    try:
+        result = generate_local_gap(
+            cluster_limitations
+        )
+        
+        # Cache the fallback result
+        cache[cache_key] = result
+        save_cache(cache)
+        
+        print(
+            "[SUCCESS] Local gap generator produced result"
+        )
+        
+        return result
+        
+    except Exception as fallback_error:
+        # Final safety net - return default gap
+        print(
+            f"[ERROR] Local generator also failed: "
+            f"{fallback_error}"
+        )
+        
+        return {
+            "theme": (
+                "Research Gap in Machine Learning"
+            ),
+            "research_gap": (
+                "Multiple research limitations were identified. "
+                "These areas warrant further investigation."
+            ),
+            "potential_idea": (
+                "A systematic investigation combining identified "
+                "limitations with novel methodologies could "
+                "address these research gaps."
+            ),
+        }

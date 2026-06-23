@@ -1,9 +1,13 @@
 from pathlib import Path
 import sys
 
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
-BASE_DIR = Path(__file__).resolve().parents[1]
-PAPERS_DIR = BASE_DIR / "data" / "papers"
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
-if str(BASE_DIR) not in sys.path:
-    sys.path.insert(0, str(BASE_DIR))
+PAPERS_DIR = PROJECT_ROOT / "data" / "papers"
+
+OUTPUTS_DIR = PROJECT_ROOT / "outputs"
+
+SRC_DIR = PROJECT_ROOT / "src"

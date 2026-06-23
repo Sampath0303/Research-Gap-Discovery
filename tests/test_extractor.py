@@ -1,4 +1,4 @@
-import _bootstrap
+from tests import _bootstrap
 from src.pdf_loader import load_all_pdfs
 from src.extractor import extract_paper_info
 
